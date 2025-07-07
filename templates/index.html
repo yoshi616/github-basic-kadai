@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"> # 日本語の文字化けを防ぐため
+    <title>ChatGPT Bot</title>
+</head>
+<body>
+    <h1>Chat with ChatGPT</h1>
+    <form method="POST">
+        <input type="text" name="message" required>
+        <button type="submit">送信</button>
+    </form>
+    
+   {% if answer %}
+        <p><strong>回答:</strong>
+        {{ answer }}</p>
+   {% endif %}
+
+</body>
+</html>
